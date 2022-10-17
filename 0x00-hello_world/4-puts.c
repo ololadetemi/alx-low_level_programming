@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* using puts instead of printf to print out a string */
+/**
+ * main - prints the string
+ * Return: always 0 successful
+  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
