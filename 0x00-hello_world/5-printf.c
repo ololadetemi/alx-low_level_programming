@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /** 
- * main - prints with proper grammar
- * Return: always 0
+ * main - prints with proper grammar,
+ * but the outcome is a piece of art,
+ * Return: 0 if successful
  */
 int main(void)
 {
