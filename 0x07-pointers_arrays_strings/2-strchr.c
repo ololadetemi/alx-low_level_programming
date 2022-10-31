@@ -1,21 +1,25 @@
 #include "main.h"
+#include <stddef.h>
 /**
- * _strchr returns pointer
+ * _strchr -> string character
  * @s: string given
  * @c: another character
  * Return: a string
  */
 char *_strchr(char *s, char c)
 {
-	int a = 0, b;
+	int a;
 
-	while (s[a])
-		a++;
-	for (b = 0; b < a; b++)
+	while (1)
 	{
-		if (c == s[b])
-			s += b;
-		return (s);
+		a = *s++;
+		if (a == c)
+		{
+			return (s - 1);
+		}
+		if (a == 0)
+		{
+			return (NULL);
+		}
 	}
-	return ('\0');
 }
